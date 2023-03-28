@@ -77,20 +77,17 @@ app.put('/shelves/:id', (req, res) => {
     }).catch(err => res.status(500).send(err));
 });
 
-app.delete('/shelves/:id', async(req, res) => {
-    try {
-        const shelf = await shelves.findByPk(req.params.id);
-        if (!shelf) {
-            return res.status(404).send('Shelf not found');
+app.delete('/shelves/:id', (req, res) => {
+    shelves.findByPk(req.params.id).then(shelve => {
+        if (!shelve) {
+            res.status(404).send('shelves not found');
+        } else {
+            books.destroy({ where: { shelf_id: req.params.id } });
+            shelves.destroy().then(() => res.send("deleted shelve and book!")).catch(err => res.status(500).send(err));
         }
-        const booklist = await books.findAll({ where: { shelf_id: req.params.id } });
-        await Promise.all(booklist.map(book => book.destroy()));
-        await shelf.destroy();
-        res.status(200).send('Shelf and books removed');
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).send(err.message);
-    }
+    }).catch(err => {
+        res.status(500).send(err);
+    });
 });
 
 /////////////////////////////////////////////////////////////////
