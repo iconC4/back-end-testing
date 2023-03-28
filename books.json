@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "shelf_id": 1
+    },
+    {
+        "id": 2,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "shelf_id": 1
+    },
+    {
+        "id": 3,
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "shelf_id": 1
+    },
+    {
+        "id": 4,
+        "title": "1984",
+        "author": "George Orwell",
+        "shelf_id": 1
+    },
+    {
+        "id": 5,
+        "title": "Brave New World",
+        "author": "Aldous Huxley",
+        "shelf_id": 3
+    },
+    {
+        "id": 6,
+        "title": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "shelf_id": 2
+    },
+    {
+        "id": 7,
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "shelf_id": 2
+    },
+    {
+        "id": 8,
+        "title": "Harry Potter and the Philosopher's Stone",
+        "author": "J.K. Rowling",
+        "shelf_id": 2
+    },
+    {
+        "id": 9,
+        "title": "The Hitchhiker's Guide to the Galaxy",
+        "author": "Douglas Adams",
+        "shelf_id": 2
+    },
+    {
+        "id": 10,
+        "title": "The Hunger Games",
+        "author": "Suzanne Collins",
+        "shelf_id": 3
+    }
+]

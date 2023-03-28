@@ -1,0 +1,17 @@
+[
+    {
+        "shelf_id": 1,
+        "category": "Classics",
+        "total_books": 4
+    },
+    {
+        "shelf_id": 2,
+        "category": "Fantasy",
+        "total_books": 4
+    },
+    {
+        "shelf_id": 3,
+        "category": "Dystopian",
+        "total_books": 2
+    }
+]
